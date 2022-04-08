@@ -16,7 +16,7 @@ VALUES ('".$placa."', 0 ,'".$tipo."', 0, '".$hora."')";
 
 if ($conn->query($sql) === TRUE) {
     echo "<script>alert('Registrado correctamente')</script>";
-    echo "<script>location.href='index.php'</script>";
+    echo "<script>location.href='../index.php'</script>";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }

@@ -1,6 +1,6 @@
 <?php
 	include 'plantilla.php';
-	require 'conexion.php';
+	require '../controller/conexion.php';
 	$query = "SELECT placa,tiempo, tipo, cantidad, inicio, fin from registros";
 	$resultado = $conn->query($query);
 	

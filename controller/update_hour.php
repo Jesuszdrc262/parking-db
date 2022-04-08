@@ -13,7 +13,7 @@ $sql = "UPDATE registros SET fin = '".$hora."' where placa = '".$placa."'";
 
 if ($conn->query($sql) === TRUE) {
   echo "<script>alert('Hora agregada correctamente')</script>";
-  echo "<script>location.href='index.php'</script>";
+  echo "<script>location.href='../index.php'</script>";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }

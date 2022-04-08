@@ -1,5 +1,5 @@
 <?php 
-include('conexion.php');
+include("controller/conexion.php");
 
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ include('conexion.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estacionamiento</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -16,7 +16,6 @@ include('conexion.php');
 </head>
 <body>
 <div class="container">
-
 
 
 <!-- Modal -->
@@ -34,7 +33,7 @@ include('conexion.php');
       <div class="form-group col-md-12">
       
       </div>
-      <form action="add.php" method="post">
+      <form action="controller/add.php" method="post">
  <div class="form-group col-md-4">
  <input type="text" class="form-control" name="placa" placeholder="No. Placa" id="placa" required="true">
  </div>
@@ -53,7 +52,7 @@ include('conexion.php');
       </div>
       </div>
       <div class="modal-footer">
-            <button onclick="href='./add.php'" value="btn1" class="btn btn-outline-primary" type="submit" name="action">Agregar</button>
+            <button onclick="href=''" value="btn1" class="btn btn-outline-primary" type="submit" name="action">Agregar</button>
       </div>
     </div>
   </div>
@@ -107,8 +106,9 @@ $consulta = "Select * from registros $where";
 $resQuery = $conn->query($consulta);
 ?>
 
-
-
+<div id="titulo">
+<h3 id="titulo">Registro de parking</h3>
+</div>
 </form><br><br>
 <div class="row">
 <form action="" method="post">
@@ -197,7 +197,6 @@ $resQuery = $conn->query($consulta);
                         ?> 
                            
                         </td>
-                        <!-- <td><a class='btn btn-info' href="">Editar</a> -->
                     </tr>
         </td>
     </tr>
@@ -208,8 +207,8 @@ $resQuery = $conn->query($consulta);
 </div>
 </div>
 
-<a href="./excel.php" id="btnExcel" widh class="btn btn-outline-primary"  >Descargar excel</a>
-<a href="./reporte.php" id="btnPDF" target="_blank" widh class="btn btn-outline-primary" >Descargar PDF</a>
+<a href="reports/excel.php" id="btnExcel" widh class="btn btn-outline-primary"  >Descargar excel</a>
+<a href="reports/reporte.php" id="btnPDF" target="_blank" widh class="btn btn-outline-primary" >Descargar PDF</a>
 <button type="button" id="btnAgregar" widh class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Agregar</button>                
 <br><br>
 </body>
