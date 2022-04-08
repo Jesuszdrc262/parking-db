@@ -1,0 +1,48 @@
+#date {
+    text-align: center;
+    margin-left: 10px;
+}
+#time {
+    margin-left: 15px;
+}
+#lblDate {
+    margin-left: 0px;
+}
+#lblTime {
+    margin-left: 40px;
+}
+#btnSend{
+    
+    margin-left: 20px;
+    
+}
+#btnExcel{
+    margin-left: 30em;
+}
+#btnPDF{
+    margin-left: 1em;
+}
+#btnSearch{
+    margin-top: -5px;
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+#btnReload{
+    margin-top: -5px;
+    font-size: 17px;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+#btnAgregar{
+    margin-left: 15px;
+}
+#placa{
+    width: 120px;
+}
+#time2{
+    width: 120px;
+}
+
